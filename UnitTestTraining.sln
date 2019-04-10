@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatisticsCalculator", "StatisticsCalculator\StatisticsCalculator.csproj", "{472CDD2F-86AB-47FB-A449-284848108208}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatsApp", "StatsApp\StatsApp.csproj", "{34A285AF-58D0-4495-9E8E-0462C3F38FF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{472CDD2F-86AB-47FB-A449-284848108208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{472CDD2F-86AB-47FB-A449-284848108208}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{472CDD2F-86AB-47FB-A449-284848108208}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{472CDD2F-86AB-47FB-A449-284848108208}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34A285AF-58D0-4495-9E8E-0462C3F38FF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34A285AF-58D0-4495-9E8E-0462C3F38FF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34A285AF-58D0-4495-9E8E-0462C3F38FF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34A285AF-58D0-4495-9E8E-0462C3F38FF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8583ADE-3463-491C-A27E-585BBC545AB2}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "StatsApp": {
+      "commandName": "Project",
+      "commandLineArgs": "3 8 11 15 25 25"
+    }
+  }
+}
