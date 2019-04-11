@@ -19,14 +19,16 @@ namespace StatisticsCalculator
 
         public static double Median(params int[] inputs)
         {
-            if (inputs.Length % 2 > 0)
+            var remainder = inputs.Length % 2;
+            var middleIndex = inputs.Length / 2;
+            if (remainder > 0)
             {
-                return inputs[inputs.Length / 2];
+                return inputs[middleIndex];
             }
-            else
-            {
-                return (inputs[(inputs.Length / 2)] + inputs[(inputs.Length / 2)-1])/2;
-            }
+
+            var leftOfMiddleItem = inputs[middleIndex - 1];
+            var rightOfMiddleItem = inputs[middleIndex];
+            return Mean(leftOfMiddleItem, rightOfMiddleItem);
         }
 
         public static double? Mode(params int[] inputs)
