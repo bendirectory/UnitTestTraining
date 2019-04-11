@@ -18,6 +18,7 @@ namespace StatisticsCalculatorTests
         [DataTestMethod]
         [DataRow(new[] { 5, 15 }, 10)]
         [DataRow(new[] { 5, 8, 15 }, 8)]
+        [DataRow(new[] {8, 5, 15}, 8)]
         public void Median(int[] inputs, double expected)
         {
             var actual = StatsCalculator.Median(inputs);

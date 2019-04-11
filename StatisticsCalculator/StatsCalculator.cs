@@ -19,6 +19,8 @@ namespace StatisticsCalculator
 
         public static double Median(params int[] inputs)
         {
+            Array.Sort(inputs);
+
             var remainder = inputs.Length % 2;
             var middleIndex = inputs.Length / 2;
             if (remainder > 0)
