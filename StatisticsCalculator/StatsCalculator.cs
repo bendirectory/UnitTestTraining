@@ -6,37 +6,49 @@ namespace StatisticsCalculator
 {
     public class StatsCalculator
     {
-        public static double Mean(params int[] inputs)
+        private int[] _inputs;
+
+        public StatsCalculator(params int[] inputs)
+        {
+            _inputs = inputs;
+        }
+
+        public double Mean()
+        {
+            return Mean(_inputs);
+        }
+
+        private double Mean(params int[] inputs)
         {
             var total = 0;
-            foreach (var number in inputs)
+            foreach (var number in _inputs)
             {
                 total += number;
             }
 
-            return total / inputs.Length;
+            return total / _inputs.Length;
         }
 
-        public static double Median(params int[] inputs)
+        public double Median()
         {
-            Array.Sort(inputs);
+            Array.Sort(_inputs);
 
-            var remainder = inputs.Length % 2;
-            var middleIndex = inputs.Length / 2;
+            var remainder = _inputs.Length % 2;
+            var middleIndex = _inputs.Length / 2;
             if (remainder > 0)
             {
-                return inputs[middleIndex];
+                return _inputs[middleIndex];
             }
 
-            var leftOfMiddleItem = inputs[middleIndex - 1];
-            var rightOfMiddleItem = inputs[middleIndex];
+            var leftOfMiddleItem = _inputs[middleIndex - 1];
+            var rightOfMiddleItem = _inputs[middleIndex];
             return Mean(leftOfMiddleItem, rightOfMiddleItem);
         }
 
-        public static double? Mode(params int[] inputs)
+        public double? Mode()
         {
             var dictionary = new Dictionary<int, int>();
-            foreach (var inputValue in inputs)
+            foreach (var inputValue in _inputs)
             {
                 if (dictionary.ContainsKey(inputValue))
                 {
@@ -58,22 +70,22 @@ namespace StatisticsCalculator
             return null;
         }
 
-        public static double StandardDeviation(int[] val)
+        public double StandardDeviation()
         {
             double result;
 
-            result = Variance(val);
+            result = Variance();
             result = Math.Sqrt(result);
 
             return result;
         }
 
-        private static double Variance(int[] val)
+        private double Variance()
         {
             double result = 0.0d;
-            double mean = Mean(val);
+            double mean = Mean(_inputs);
 
-            foreach (double d in val)
+            foreach (double d in _inputs)
             {
                 double dif = mean - d;
                 dif = Math.Abs(dif);
@@ -81,7 +93,7 @@ namespace StatisticsCalculator
                 result += dif;
             }
 
-            result = result / val.Length;
+            result = result / _inputs.Length;
 
             return result;
         }

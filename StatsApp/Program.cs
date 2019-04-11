@@ -14,10 +14,12 @@ namespace StatsApp
                 numberList.Add(Convert.ToInt32(stringNumber));
             }
 
-            Console.WriteLine("Mean: " + StatsCalculator.Mean(numberList.ToArray()));
-            Console.WriteLine("Median: " + StatsCalculator.Median(numberList.ToArray()));
-            Console.WriteLine("Mode: " + StatsCalculator.Mode(numberList.ToArray()));
-            Console.WriteLine("Standard Deviation: " + StatsCalculator.StandardDeviation(numberList.ToArray()));
+            var calculator = new StatsCalculator(numberList.ToArray());
+
+            Console.WriteLine("Mean: " + calculator.Mean());
+            Console.WriteLine("Median: " + calculator.Median());
+            Console.WriteLine("Mode: " + calculator.Mode());
+            Console.WriteLine("Standard Deviation: " + calculator.StandardDeviation());
 
             Console.ReadLine();
         }

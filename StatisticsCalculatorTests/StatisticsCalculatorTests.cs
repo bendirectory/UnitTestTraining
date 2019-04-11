@@ -11,7 +11,8 @@ namespace StatisticsCalculatorTests
         [DataRow(new[] { 5, 15 }, 10)]
         public void Mean(int[] inputs, double expected)
         {
-            var actual = StatsCalculator.Mean(inputs);
+            var calculator = new StatsCalculator(inputs);
+            var actual = calculator.Mean();
             Assert.AreEqual(expected, actual);
         }
 
@@ -21,7 +22,8 @@ namespace StatisticsCalculatorTests
         [DataRow(new[] {8, 5, 15}, 8)]
         public void Median(int[] inputs, double expected)
         {
-            var actual = StatsCalculator.Median(inputs);
+            var calculator = new StatsCalculator(inputs);
+            var actual = calculator.Median();
             Assert.AreEqual(expected, actual);
         }
     }
