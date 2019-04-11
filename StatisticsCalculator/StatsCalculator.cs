@@ -21,12 +21,12 @@ namespace StatisticsCalculator
         private double Mean(params int[] inputs)
         {
             var total = 0;
-            foreach (var number in _inputs)
+            foreach (var number in inputs)
             {
                 total += number;
             }
 
-            return total / _inputs.Length;
+            return total / inputs.Length;
         }
 
         public double Median()
