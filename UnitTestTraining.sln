@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatisticsCalculator", "Sta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatsApp", "StatsApp\StatsApp.csproj", "{34A285AF-58D0-4495-9E8E-0462C3F38FF5}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatisticsCalculatorTests", "StatisticsCalculatorTests\StatisticsCalculatorTests.csproj", "{7E39C6A4-4962-4E91-93B9-BD52B03E6C91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{34A285AF-58D0-4495-9E8E-0462C3F38FF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34A285AF-58D0-4495-9E8E-0462C3F38FF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34A285AF-58D0-4495-9E8E-0462C3F38FF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E39C6A4-4962-4E91-93B9-BD52B03E6C91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E39C6A4-4962-4E91-93B9-BD52B03E6C91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E39C6A4-4962-4E91-93B9-BD52B03E6C91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E39C6A4-4962-4E91-93B9-BD52B03E6C91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
