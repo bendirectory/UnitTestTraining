@@ -26,5 +26,14 @@ namespace StatisticsCalculatorTests
             var actual = calculator.Median();
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void CalculatorString()
+        {
+            var inputs = new[] {7, 5, 5, 15};
+            var calculator = new StatsCalculator(inputs);
+            var expected = "Mean: 8\r\nMedian: 6\r\nMode: 5";
+            Assert.AreEqual(expected, calculator.ToString());
+        }
     }
 }

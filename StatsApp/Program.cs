@@ -15,11 +15,7 @@ namespace StatsApp
             }
 
             var calculator = new StatsCalculator(numberList.ToArray());
-
-            Console.WriteLine("Mean: " + calculator.Mean());
-            Console.WriteLine("Median: " + calculator.Median());
-            Console.WriteLine("Mode: " + calculator.Mode());
-            Console.WriteLine("Standard Deviation: " + calculator.StandardDeviation());
+            Console.WriteLine(calculator);
 
             Console.ReadLine();
         }
